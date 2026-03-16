@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from groq import Groq
 
 # -- Page config
-st.set_page_config(page_title="AgenticX Resume", layout="wide", page_icon="✦")
+st.set_page_config(page_title="AgenticX Resume", layout="wide", page_icon="💼")
 
 # -- Groq client (key loaded from .streamlit/secrets.toml)
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
@@ -186,6 +186,9 @@ hr { border-color: #1c1c1f !important; margin: 1.5rem 0 !important; }
 
 .stSpinner > div { border-top-color: #3b82f6 !important; }
 
+[data-testid="stToolbar"] { display: none !important; }
+[data-testid="stStatusWidget"] { display: none !important; }
+.viewerBadge_container__r5tak { display: none !important; }
 #MainMenu, footer, header { visibility: hidden; }
 </style>
 """, unsafe_allow_html=True)
